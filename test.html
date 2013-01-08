@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>switcher component</title>
+  <style>
+    li, #another {
+      cursor: pointer;
+    }
+
+    .is-selected {
+      background: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>switcher component</h1>
+
+  <ul>
+    <li>hi</li>
+    <li>hello</li>
+    <li>whats up</li>
+    <li>whatever</li>
+    <li>cool</li>
+  </ul>
+
+  <div id="another">another div</div>
+
+  <script src="../build/build.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var Switch = require('switcher');
+    var switcher = Switch(),
+        items = document.querySelectorAll('li');
+
+    for (var i = 0, len = items.length; i < len; i++) {
+      switcher.add(items[i], function() {
+        console.log('lol....');
+      });
+    };
+
+    switcher.add(another);
+
+    setTimeout(function() {
+      console.log('removing another');
+      switcher.remove(another)
+    }, 3000);
+
+  </script>
+</body>
+</html>
