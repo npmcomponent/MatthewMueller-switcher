@@ -11,6 +11,8 @@ Switch between elements using a class. Ensures that you can only select one elem
   <li>whatever</li>
   <li>cool</li>
 </ul>
+
+<div id="another">another item</div>
 ```
 
 ```js
