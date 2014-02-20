@@ -2,8 +2,8 @@
  * Module dependencies
  */
 
-var event = require('event'),
-    classes = require('classes');
+var event = require('component-event'),
+    classes = require('component-classes');
 
 /**
  * Elements cache

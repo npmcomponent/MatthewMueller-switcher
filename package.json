@@ -1,0 +1,11 @@
+{
+  "name": "matthewmueller-switcher",
+  "description": "choose one from many",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component-event": "git://github.com/npmcomponent/component-event.git",
+    "component-classes": "git://github.com/npmcomponent/component-classes.git"
+  },
+  "license": "MIT"
+}
